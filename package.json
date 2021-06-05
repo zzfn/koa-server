@@ -1,0 +1,25 @@
+{
+  "name": "koa-server",
+  "version": "1.0.0",
+  "description": "博客前台api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzfn/koa-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zzfn/koa-server/issues"
+  },
+  "homepage": "https://github.com/zzfn/koa-server#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.9",
+    "koa": "^2.13.1"
+  }
+}
