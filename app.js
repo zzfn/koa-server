@@ -3,6 +3,7 @@ const app = new Koa();
 const routing = require('./routes');
 const bodyParser = require('koa-bodyparser');
 const cors = require('koa2-cors');
+app.proxy=true
 app.use(
     cors({
         maxAge: 5, //指定本次预检请求的有效期，单位为秒。
