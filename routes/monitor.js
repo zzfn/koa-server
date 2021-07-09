@@ -5,7 +5,7 @@ const client = new MongoClient(url);
 
 const router = new Router({prefix: '/monitor'})
 
-router.post('/', async ctx => {
+router.post('/trace', async ctx => {
     const req = ctx.request.body
     try {
         await client.connect();
