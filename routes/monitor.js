@@ -10,7 +10,7 @@ router.post('/trace', async ctx => {
     const client = new MongoClient(url);
     try {
         await client.connect();
-        const re =await client.db("zzf").collection('logs').insertOne({...req,time:new Date()});
+        const re =await client.db("zzf").collection('logs').insertOne({...req,time:new Date(),ip:ctx.request.ip});
         ctx.body=re.result
     } finally {
         if(client){
