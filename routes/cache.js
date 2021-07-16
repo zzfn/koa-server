@@ -24,10 +24,13 @@ router.get('/cache-control', async ctx => {
     }
 })
 router.get('/etag', async ctx => {
+    console.log(1)
     // ctx.response.lastModified = new Date();
     const Expired=new Date(new Date().getTime()+10000).toUTCString()
-    ctx.set('Etag','123')
+    ctx.set('Etag','1123')
+    ctx.status = 304;
     ctx.body={
+        a:1,
         now:new Date().toUTCString(),
         Expired
     }
